@@ -32,6 +32,11 @@ public class Personne {
 		System.out.println("Tapez votre numéro de téléphone");
 		this.telephone = sc.next();
 	}
+	
+	public Personne(String nom, String prenom) {
+		this.nom = nom;
+		this.prenom = prenom;
+	}
 
 	@SuppressWarnings("deprecation")
 	public Personne(String nom, String prenom, String accessLevel, int year, int month, int day, String mail, String telephone) {
